@@ -7,7 +7,9 @@
     $conn = $objDb->connect();
 
     $movie = json_decode(file_get_contents('php://input'));
-    $sql = "UPDATE moviedb.movie SET title= :title,type=:type, thumbnail= :thumbnail, trailer= :trailer, description= :description WHERE id= :id";
+    $sql = "UPDATE moviedb.movie SET title= :title,type=:type, 
+    thumbnail= :thumbnail, trailer= :trailer, 
+    description= :description WHERE id= :id";
     $stmt = $conn->prepare($sql); 
     $stmt->bindParam(':id', $movie->id);
     $stmt->bindParam(':type', $movie->type);

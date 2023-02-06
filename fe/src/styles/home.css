@@ -1,0 +1,54 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    background: url('../images/bg.png');
+    background-size: cover;
+}
+.nav-bar{
+    width: 100%;
+    background-color: rgba(0,0,0, 0.4);
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+}
+.main .nav-bar .logo-cont{
+    width: 20%;
+    height: 100%;
+    margin-right: auto;
+}
+.main .nav-bar .logo-cont .logo{
+    color: #e50914;
+    font-size: 35px;
+    font-weight: bold;
+}
+.main .nav-bar .signin-cont{
+    width: 20%;
+    height: 100%;
+    margin-left: auto;
+}
+.main .nav-bar .signin-cont .link-cont{
+    border: none;
+    background-color: transparent !important;
+}
+
+.main .banner{
+    width: 70%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main .disable-texttf{
+    text-transform: capitalize;
+}
+.main .banner .text-lg,
+.main .banner .text-xs{
+    color: white
+}
+.main .banner .text-lg{
+    font-size: 35px
+}
+.main .banner .text-xs{
+    font-size: 25px
+}
