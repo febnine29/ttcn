@@ -15,9 +15,12 @@
         $stmt->execute();
         $movie = $stmt->fetch(PDO::FETCH_ASSOC);
         echo json_encode($movie);
+        // return json_encode($movie);
     } else{
     $stmt = $conn->prepare($sql);
     $stmt->execute();
     $movies = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    echo json_encode($movies);}
+    echo json_encode($movies);
+    // return json_encode($movies);
+    }
 ?>

@@ -16,10 +16,10 @@
         $stmt->execute();
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
         
-        if($stmt->execute()){
+        if($user == false){
+            http_response_code(404);
+        } else {
             http_response_code(200);
             echo json_encode($user);
-        } else {
-            http_response_code(500);
         }
 ?>

@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0
+}
+.main-page{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.main-page .play-button{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 50px;
+    color: white
+}
+.main-page .nav-bar{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2
+}
+.main-page .nav-bar .logo-cont{
+    width: 20%;
+    height: 100%;
+    margin-right: auto;
+}
+.main-page .nav-bar .logo-cont .logo{
+    color: #e50914;
+    font-size: 35px;
+    font-weight: bold;
+}
+.main-page .nav-bar .signin-cont{
+    width: 12%;
+    height: 100%;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-page .disable-texttf{
+    text-transform: capitalize !important;
+}
+.main-page .main-banner{
+    height: 88%;
+    position: relative;
+}
+.main-banner .single-banner{
+    width: 100%;
+    height: auto;
+}
+.main-banner .single-banner img{
+    width: 100%;
+    height: auto;
+    filter: brightness(60%);
+    z-index:1
+}
+.main-banner .control-bar{
+    position: absolute;
+    bottom: 30% ;
+    left: 10%;
+    width: 40%;
+}
+.main-banner .control-bar p{
+    text-align: left;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.main-banner .control-bar .play-btn{
+    background: white;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: auto;
+}
+.main-page .list-movies{
+    width: 100vw;
+    height: 12%;
+    display: flex;
+    position: relative;
+}
+.main-page .list-movies .single-box{
+    width: 15%;
+    height: 95%;
+    position: relative;
+    margin: 0px 5px
+}
+.main-page .list-movies .single-box img{
+    width: 100%;
+    height: auto;
+}
+.main-page .list-movies .single-box .play-bar{
+    position: absolute;
+    left: 0%;
+    bottom: 0;
+}
+.main-page .list-movies .single-box .play-bar .mini-play{
+    width: 30%;
+    height: auto;
+}
